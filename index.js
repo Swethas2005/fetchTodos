@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       fetch("https://jsonplaceholder.typicode.com/todos")
         .then(response => response.json())
         .then(data => {
-          todoList.innerHTML = ""; // Clear existing todo list
+          todoList.innerHTML = ""; 
           data.forEach(todo => {
             const listItem = document.createElement("li");
             listItem.textContent = todo.title;
